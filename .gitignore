@@ -1,0 +1,14 @@
+.idea/
+.nuxt/
+.vscode/
+coverage/
+dist/
+docs-dist/
+esm/
+node_modules/
+*.iml
+*.log
+*.swp
+.DS_Store
+sw.js
+workbox*.js*
