@@ -950,7 +950,6 @@ export const BModal = /*#__PURE__*/ Vue.extend({
           staticClass: 'modal-content',
           class: this.contentClass,
           attrs: {
-            role: 'document',
             id: this.safeId('__BV_modal_content_'),
             tabindex: '-1'
           }
@@ -995,15 +994,7 @@ export const BModal = /*#__PURE__*/ Vue.extend({
             role: 'dialog',
             'aria-hidden': this.isVisible ? null : 'true',
             'aria-modal': this.isVisible ? 'true' : null,
-            'aria-label': this.ariaLabel,
-            'aria-labelledby':
-              this.hideHeader ||
-              this.ariaLabel ||
-              // TODO: Rename slot to `title` and deprecate `modal-title`
-              !(this.hasNormalizedSlot('modal-title') || this.titleHtml || this.title)
-                ? null
-                : this.safeId('__BV_modal_title_'),
-            'aria-describedby': this.safeId('__BV_modal_body_')
+            'aria-label': this.ariaLabel
           },
           on: { keydown: this.onEsc, click: this.onClickOut }
         },

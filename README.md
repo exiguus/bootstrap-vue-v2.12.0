@@ -17,6 +17,13 @@ Build:
 
 `yarn build`
 
+## CHANGES
+
+- modal
+  - not needed document role
+  - not needed labelby
+  - not needed describedby
+
 ---
 
 <p align="center">
